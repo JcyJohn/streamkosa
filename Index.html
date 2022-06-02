@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stream Kosa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src='main.js'></script>
+</head>
+<body>
+    <div class="nav-bar" id = "navbar">
+        <img id = "logo" src="./Images/logo.svg">
+        <nav>
+            <a href="./Index.html" class="selected">Home</a>
+            <a href="./explore.html">Explore</a>
+            <a href="#">Stream</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div id = "nav-end">
+            <img src="./Images/Utilities/search.svg"> 
+            <img src="./Images/Utilities/cart.svg">            
+            <div>
+                <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Background light effect -->
+    <div class="background-light-con">
+        <div class="background-light" id="left"></div>
+        <div class="background-light" id="middle"></div>
+        <div class="background-light" id="right"></div>
+    </div>
+
+    <!-- Main code for body -->
+   
+    <div id="landing-page">
+        <div id = "landing-page-intro">
+            <section>
+                <h1>Light up your world with <span> quality live entertainment</span></h1>
+                <p>Enjoy amazing shows from some of the best performers
+                    around the world in real-time.</p>
+                <button class="button primary-btn">Let the fun begin!</button> 
+            </section>
+
+            <div id = "landing-page-images-con">
+                <div id="first-img-con">
+                    <div class="landing-page-images">
+                         <img src="./Images/ArtistPhotos/Artist1.png">
+                         <h2>BURNA BOY</h2>
+                    </div>
+                    <div class="landing-page-images">
+                        <img src="./Images/ArtistPhotos/Artist2.png">
+                        <h2>DAVID O</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="landing-page-images">
+                        <img src="./Images/ArtistPhotos/Artist3.png">
+                        <h2>WIZKID</h2>
+                    </div>
+                    <div class="landing-page-images">
+                       <img src="./Images/ArtistPhotos/Artist4.png">
+                       <h2>ASA</h2>
+                    </div>
+                </div>               
+                
+            </div>
+        </div>        
+        <div id = "landing-page-features">
+            <div id = "landing-page-features-intro-con" >
+                <img src="./Images/Utilities/arrow.svg">
+                <div id = "landing-page-features-intro">
+                    <h2>We have <span>designed</span> a ton of
+                        Am<span>aaaa</span>zing features</h2>
+                </div>
+            </div>
+            <section id="landing-page-features-contents">
+                <div class="singleFeature">
+                    <img src="./Images/Features/love.svg">
+                    <h3>Donations</h3>
+                </div>
+                <div class="singleFeature">
+                    <img src="./Images/Features/money.svg">
+                    <h3>Spraying Money</h3>
+                </div>
+                <div class="singleFeature">
+                    <img src="./Images/Features/gift.png">
+                    <h3>Gift Ticket</h3>
+                </div>
+                <div class="singleFeature">
+                    <img src="./Images/Features/bitcoin.svg">
+                    <h3>Pay with bitcoin</h3>
+                </div>
+            </section>
+        </div>
+        <div id="FAQ">
+            <h2>FAQs</h2>
+            <section class="single-faq " id = "elementId1">
+                <div>
+                    <div  onclick="toggleFAQ('elementId1',this)" class="single-faq-title"><h3>What is KOSA?</h3> <div class="arrow"></div></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum, placeat quo eos ex asperiores sit iste architecto unde, saepe laudantium, corporis aut harum rerum molestias. Dolorem illo sed laboriosam!</p>
+                </div>
+            </section>
+            <section class="single-faq" id = "elementId2">
+                <div>
+                    <div  onclick="toggleFAQ('elementId2',this)" class="single-faq-title"><h3>How do i watch?</h3> <div class="arrow"></div></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum, placeat quo eos ex asperiores sit iste architecto unde, saepe laudantium, corporis aut harum rerum molestias. Dolorem illo sed laboriosam!</p>
+                </div>
+            </section>
+            <section class="single-faq" id = "elementId3">
+                <div>
+                    <div onclick="toggleFAQ('elementId3',this)" class="single-faq-title"><h3>Can I buy a ticket as a gift?</h3> <div  class="arrow"></div></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum, placeat quo eos ex asperiores sit iste architecto unde, saepe laudantium, corporis aut harum rerum molestias. Dolorem illo sed laboriosam!</p>
+                </div>
+            </section>
+            <section class="single-faq" id = "elementId4">
+                <div>
+                    <div onclick="toggleFAQ('elementId4',this)" class="single-faq-title"><h3>How do I host an event on KOSA</h3> <div  class="arrow"></div></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum, placeat quo eos ex asperiores sit iste architecto unde, saepe laudantium, corporis aut harum rerum molestias. Dolorem illo sed laboriosam!</p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div id="top-footer">
+                <img src="./Images/logo.svg">
+                <section>
+                    <img id ="facebook" src="./Images/Utilities/Social/facebook.svg">
+                    <img src="./Images/Utilities/Social/twitter.svg">
+                    <img src="./Images/Utilities/Social/whatsapp.svg">
+                    <img src="./Images/Utilities/Social/instagram.svg">
+                </section>
+            </div>
+            <div id="bottom-footer">
+                <p>© 2022 Kosa Inc. </p>
+                <a href="#" class="">Terms of Service</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Customer Service</a>
+            </div>
+        </footer>
+    </div> 
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stream Kosa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src='main.js'></script>
+</head>
+<body>
+    <div class="nav-bar explore-nav" id = "explore-navbar">
+        <img id = "logo" src="./Images/logo.svg">
+        <nav>
+            <a href="./Index.html" >Home</a>
+            <a href="./explore.html" class="selected">Explore</a>
+            <a href="#">Stream</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div id = "nav-end">
+            <img src="./Images/Utilities/search.svg"> 
+            <img src="./Images/Utilities/cart.svg">            
+            <div>
+                <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="carosal">
+            <!-- carousels  -->
+            <div id="carosal-details">
+                <h1>Burna Boy Live In London</h1>
+                <h2>6<sup>th</sup> July 2020, 2:30 (WAT)</h2>
+                <button class="explore-btn">Get a ticket</button>
+            </div>
+            <img src="./Images/carosal/img1.png">
+        </div>
+        
+        <div class="vertical-scroll-con"> 
+            <h4>Upcoming Live-streams</h4>
+            <div class="left-gradient hidden-gradient"></div>
+            <div class="right-gradient hidden-gradient"></div>
+            <div class="arrow-con left-arrow-con " id="ucl-left" onclick="scrollVertical('upcoming-liveStream', true)" >
+                <div class="arrow"></div>
+            </div>
+            <div class="arrow-con right-arrow-con " id = "ucl-right" onclick="scrollVertical('upcoming-liveStream', false)" >
+                <div class="arrow"></div>
+            </div>
+
+            <div class="vertical-scroll"  id="upcoming-liveStream">           
+            
+                <div class="vertical-scroll-content">
+                    <div class="vertical-scroll-item">
+                        <img src="./Images/Live/ucl1.png"/>
+                        <h2>BUY NOW</h2>
+                        <div class="vertical-scroll-item-date">25<sup>th</sup> <span>July</span> </div>
+                    </div>
+                    <div class="vertical-scroll-item">
+                        <img src="./Images/Live/ucl2.png"/>
+                        <h2>BUY NOW</h2>
+                        <div class="vertical-scroll-item-date">28<sup>th</sup> <span>Sept.</span> </div>
+                    </div>
+                    <div class="vertical-scroll-item">
+                        <img src="./Images/Live/ucl3.png"/>
+                        <h2>BUY NOW</h2>
+                        <div class="vertical-scroll-item-date">1<sup>st</sup> <span>Jan.</span> </div>
+                    </div>
+
+                    <div class="emptyCard">
+                        <img src="./Images/logo.svg" alt="">
+                    </div>
+                    <div class="emptyCard">
+                        <img src="./Images/logo.svg" alt="">
+                    </div>
+                    <div class="emptyCard">
+                        <img src="./Images/logo.svg" alt="">
+                    </div>
+                  
+                </div>
+           
+            </div>
+        </div>
+
+        <div class="vertical-scroll-con"> 
+            <h4>Past Live-streams</h4>
+            <div class="left-gradient hidden-gradient"></div>
+            <div class="right-gradient hidden-gradient"></div>
+            <div class="arrow-con left-arrow-con " id="pls-left" onclick="scrollVertical('past-liveStream', true)" >
+                <div class="arrow"></div>
+            </div>
+            <div class="arrow-con right-arrow-con " id = "pls-right" onclick="scrollVertical('past-liveStream', false)" >
+                <div class="arrow"></div>
+            </div>
+
+            <div class="vertical-scroll"  id="past-liveStream">           
+            
+                <div class="vertical-scroll-content">
+                    <div class="vertical-scroll-item">
+                        <img src="./Images/Live/pls1.png"/>
+                        <h2>WATCH NOW</h2>
+                        <div class="vertical-scroll-item-date">25<sup>th</sup> <span>July</span> </div>
+                    </div>
+                    <div class="vertical-scroll-item">
+                        <img src="./Images/Live/pls2.png"/>
+                        <h2>WATCH NOW</h2>
+                        <div class="vertical-scroll-item-date">28<sup>th</sup> <span>Sept.</span> </div>
+                    </div>                                 
+                </div>
+           
+            </div>
+        </div>
+        
+        <div class="vertical-scroll-con"> 
+            <h4>Featured Artist</h4>
+            <div class="left-gradient hidden-gradient"></div>
+            <div class="right-gradient hidden-gradient"></div>
+            <div class="arrow-con left-arrow-con " id="fa-left" onclick="scrollVertical('featuredArtist', true)" >
+                <div class="arrow"></div>
+            </div>
+            <div class="arrow-con right-arrow-con " id = "fa-right" onclick="scrollVertical('featuredArtist', false)" >
+                <div class="arrow"></div>
+            </div>
+
+            <div class="vertical-scroll"  id="featuredArtist">           
+            
+                <div class="vertical-scroll-content">
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A1.png"/>
+                        <h2>DAVID O</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A2.png"/>
+                        <h2>WIZKID</h2>
+                    </div>  
+                    <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A3.png"/>
+                        <h2>ASA</h2>
+                    </div>  
+                    <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A4.png"/>
+                        <h2>BURNA BOY</h2>
+                    </div>  
+                     <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A5.png"/>
+                        <h2>2 BABA</h2>
+                    </div>      
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A1.png"/>
+                        <h2>DAVID O</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A2.png"/>
+                        <h2>WIZKID</h2>
+                    </div>  
+                    <div class="vertical-scroll-item featuredArtist" >
+                        <img src="./Images/Live/A3.png"/>
+                        <h2>ASA</h2>
+                    </div>              
+                                                   
+                </div>
+           
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="black-footer">
+        <div id="top-footer">
+            <img src="./Images/logo.svg">
+            <section>
+                <img id ="facebook" src="./Images/Utilities/Social/facebook.svg">
+                <img src="./Images/Utilities/Social/twitter.svg">
+                <img src="./Images/Utilities/Social/whatsapp.svg">
+                <img src="./Images/Utilities/Social/instagram.svg">
+            </section>
+        </div>
+        <div id="bottom-footer">
+            <p>© 2022 Kosa Inc. </p>
+            <a href="#" class="">Terms of Service</a>
+            <a href="#" class="">Privacy Policy</a>
+            <a href="#" class="">Customer Service</a>
+        </div>
+    </footer>
+</body>
+</html>
