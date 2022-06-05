@@ -830,7 +830,7 @@ footer{
     font-size: 13px;
 }
 
-.details-button-group, .details-but2{
+.details-button-group, .details-but2,.tooltip-con{
     display: flex;
     position: relative;
     align-items: center;
@@ -868,7 +868,7 @@ footer{
     width: fit-content;
     height: fit-content;
 }
-.details-but2:hover .tooltip{
+.tooltip-con:hover .tooltip{
     opacity: 1;
     padding: 6px 12px;
     height: 25px;
@@ -885,3 +885,229 @@ footer{
     opacity: .5;
 }
 /* End of details Page */
+
+
+/* Login Start */
+.transparent-nav{
+    background-color: transparent;
+    background: none;
+    background-image: none;
+}
+.transparent-nav div{
+    opacity: .6;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 14px;
+}
+.transparent-nav div:hover{
+    opacity: .8;
+}
+
+
+.login-container{
+    width: 430px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.014);
+    border-radius: 12px;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    padding: 16px;
+}
+.login-container-header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}.login-menu{
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: .3;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+}.login-container-header > span{
+    position: absolute;
+    opacity: .2;
+}.login-menu-selected{
+    border-color: #f2a966;
+    opacity: 1;
+}.login-container form{
+    padding: 30px
+}.login-error{
+    font-size: 13px;
+    opacity: .5;
+    color: #f2a966;
+    height: 0px;
+    overflow: hidden;
+    transition: .2s;
+    opacity: 0;
+}.show-error{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 25px;
+}.form-inputBox{
+    width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+}.form-inputBox > div{
+    /* This is the title of the input box */
+    font-size: 13px;
+    margin-bottom: 10px;
+    color:#ffffff43;
+}.form-inputBox input{
+    width: 100%;
+    padding: 12px 15px;
+    color:rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff43;
+}
+.invalid-field input{
+    border-color: #f2aa6667;
+    color:#f2aa6667;
+}.invalid-field div{
+    color:#f2aa6667;
+}
+
+.form-footer{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.form-footer div{
+    /* forgot password div */
+    font-size: 13px;
+    cursor: pointer;
+    color: #ffffff2d;
+
+}
+.login-btn{
+    background-color: #f1b55a;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .2s;
+}.login-btn:hover{
+    border-color: rgba(255, 255, 255, 0.349);
+    background-color: transparent;
+    color: white;
+}
+.login-outer-footer{
+    position: absolute;
+    bottom: -140px;
+    padding-bottom: 100px;
+    font-size: 13px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    opacity: .2;
+
+}.login-outer-footer sapn{
+    position: absolute;
+}
+.login-outer-footer a{
+    color: white;
+}.confirmBox{
+    padding: 30px;
+}
+.confirmBoxMessage{
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.479);
+}.confirmBoxMessage span{
+    color: white;
+}.confirmBox button{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 45px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #0a0a0a;
+    border:1px solid transparent;
+    transition: .2s;
+}.confirmBox button:hover{
+    color: white;
+    border-color: white;
+    opacity: .5;
+    background-color: transparent;
+}.btn-ful{
+    width: 100%;
+}
+
+
+.account-type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    font-size: 13px;
+}.account-type div{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 14px 20px;
+    width: 47%;
+    transition: .1s;
+    opacity: .2;
+    cursor: pointer;
+}.account-type div:not(.selected-account):hover{
+    opacity: .4;
+}.account-type .selected-account{
+    border-color: transparent;
+    background-color: rgb(245, 245, 245);
+    opacity: 1;
+    color: black;
+}
+
+
+.Text-and-help{
+    width: 100%;
+    padding: 14px 30px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.233);
+}
+.learn-more{
+    margin-left: 15px;
+    width: 8px;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.719);;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+}
+
+.login-container-title{
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.form-inputBox .login-message{
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: .7;
+}
+/* Login end */
+
+input::-webkit-inner-spin-button,
+::-webkit-inner-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
