@@ -12,22 +12,42 @@
     <script defer src='main.js'></script>
 </head>
 <body>
-    <div class="nav-bar" id = "">
-        <img id = "logo" src="./Images/logo.svg">
-        <nav>
-            <a href="./Index.html" >Home</a>
-            <a href="./explore.html">Explore</a>
-            <a href="./stream.html" class="selected">Stream</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div id = "nav-end">
-            <img src="./Images/Utilities/search.svg"> 
-            <img src="./Images/Utilities/cart.svg">            
-            <div>
-                <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
-            </div>
+  <div class="nav-bar" id = "">
+    <img id = "logo" src="./Images/logo.svg">
+    <nav class="hidden-nav-Items">
+        <a href="./Index.html" class="selected">Home</a>
+        <a href="./explore.html">Explore</a>
+        <a href="./stream.html">Stream</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="hidden-nav-Items" id = "nav-end" >
+        <img src="./Images/Utilities/search.svg"> 
+        <img src="./Images/Utilities/cart.svg">            
+        <div>
+            <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
         </div>
     </div>
+    <div class="mobile-nav">
+        <div id="mobile-nav-bar" class="mobile-menu">
+            <nav class="">
+                <a href="./Index.html" class="selected">Home</a>
+                <a href="./explore.html">Explore</a>
+                <a href="./stream.html">Stream</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Login</a>
+                <a href="#">Sign up</a>
+            </nav>
+            <img class="mobile-nav-icon" src="./Images/Utilities/cart.svg"> 
+            <img class="mobile-nav-icon mobile-search" src="./Images/Utilities/search.svg"> 
+        </div>
+        <div onclick="toggleHam()" class="ham-bugger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       
+    </div>
+</div>
 
       <!-- Simple Background light effect -->
     <div class="background-light-con static-light">

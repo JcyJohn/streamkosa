@@ -121,6 +121,79 @@ body{
     opacity: .6;
 }
 
+.ham-bugger{
+    cursor: pointer;
+}
+
+.mobile-nav{
+      display: none;
+}
+.ham-bugger div{
+    height: 2px;
+    width: 20px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom:5px;
+    transition: .2;
+}
+
+.mobile-menu{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.99);
+    top:0px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    display: none;
+}
+.show-mobile-menu{
+    display: flex;
+}
+.show-mobile-menu ~ .ham-bugger{
+    position: fixed;
+    z-index: 1001;
+    opacity: .5;
+    right: 30px;
+}.show-mobile-menu ~ .ham-bugger div:nth-child(2){
+    opacity: 0;
+}.show-mobile-menu ~ .ham-bugger div:first-child{
+    transform:  translateY(7px) rotate(45deg);
+}.show-mobile-menu ~ .ham-bugger div:last-child{
+    transform: translateY(-7px)  rotate(-45deg);
+}
+
+.ham-bugger:hover{
+    opacity: 1;
+}
+
+
+.mobile-menu nav{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+.mobile-nav-icon{
+    z-index: 1001;
+    height: 20px;
+    position: fixed;
+    right: 30px;
+    margin-top: 50px;
+    opacity: .5;
+    top:40px;
+    cursor: pointer;
+}.mobile-search{
+    margin-top: 100px;
+}.mobile-nav-icon:hover{
+    opacity: 1;
+}
 /* End of Nav-bar Css */
 
 
@@ -200,7 +273,7 @@ body{
 }
 h1{
     font-size: 50px;
-    width: 500px;
+    width: 440px;
     color: white;
 }h1 span{
     color: #f2a966;
@@ -241,6 +314,7 @@ h1{
 }#landing-page-images-con > div{
     margin-bottom: 24px;
     display: flex;
+    transition: .2s;
 }#landing-page-images-con #first-img-con{
     margin-left: 100px;
 }.landing-page-images {
@@ -332,12 +406,14 @@ h1{
 #landing-page-features-contents{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 43px;
 }
 
 .singleFeature{
-    margin: 15px;
+    margin: 8px;
     text-align: center;
-    padding: 35px 0px;
+    padding: 30px 0px;
     padding-bottom: 30px;
     cursor: pointer;
     width: 170px;
@@ -350,7 +426,9 @@ h1{
     box-shadow: -5px 10px 1rem rgba(0, 0, 0, 0.637);
 }.singleFeature img{
     height: 70px;
-    margin-bottom: 15px;
+    width: 70px;
+    object-fit: contain;
+    margin-bottom: 12px;
 }.singleFeature h3{
     font-weight: 400;
     font-size: 14px;
@@ -366,7 +444,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 60px;
     padding-bottom: 150px;
 }#FAQ h2{
     font-size: 35px;
@@ -374,7 +452,7 @@ h1{
 }
 .single-faq{
     margin-top: 20px;
-    width: 800px;
+    max-width: 800px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.147);
 }.single-faq h3{
     font-weight: 300;
@@ -392,6 +470,7 @@ h1{
 }.opened-faq p{
     height: 50px;
     opacity: .5;
+    margin-bottom: 20px;
 }
 .arrow{
     transform: rotate(225deg);
@@ -567,7 +646,7 @@ footer{
     height: 280px;
     width: 100px;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .left-gradient{
     background: linear-gradient(-90deg, rgba(10,10,10,0) 0%, rgba(10, 10, 10, 0.60) 50%,rgb(10, 10, 10) 100%);
@@ -1112,3 +1191,293 @@ input::-webkit-inner-spin-button,
     margin: 0;
 }
 
+
+@media screen and (max-width: 1250px) {
+    #landing-page-features-intro-con img{
+        margin-left: 80px;
+        height: 80px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #landing-page-images-con  #first-img-con{
+        margin-left:0px;
+    }#landing-page-features-intro{
+        background-image: none;
+        margin-right: 60px;
+        padding-right: 0px;
+    }#landing-page-features-intro h2{
+        min-width: 330px;
+        max-width: 510px;
+        width: auto;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+   
+    .landing-page-images > img {
+        height: 180px;
+        width: 150px;
+    }h1{
+        font-size: 40px;
+        width: auto;
+        max-width: 380px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 840px) {
+   
+    .landing-page-images > img {
+        height: 90px;
+        width:85px;
+        border-radius: 5px;
+    }.landing-page-images h2{
+        font-size: 16px;
+    }#landing-page-intro{
+        align-items: center;
+    }.nav-bar, footer, #carosal-details, #details-page-downShadow {
+        padding: 40px;
+    }.vertical-scroll{
+        padding: 0px 40px;
+    }.vertical-scroll-con h4 {
+        margin-left: 40px;
+    }#carosal-details, #details-page-downShadow {
+        padding-top: 250px;
+        padding-bottom: 60px;
+    }#FAQ{
+        padding: 20px 40px;
+        padding-bottom: 150px;
+    }.mobile-nav{
+        display: block;
+    }.hidden-nav-Items{
+        display: none !important ;
+    }#landing-page-intro{
+        padding: 0px 40px;
+    }#landing-page{
+        padding: 0px;
+    }h1{
+        font-size: 34px;
+        max-width: 295px;
+    }
+    #carosal-details h1{
+        white-space: normal;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    #landing-page-features-intro h2{
+        font-size: 34px;
+    }#landing-page-features-intro {
+        margin-right: 40px;
+    }#landing-page-features-intro-con{
+        justify-content: flex-end;
+    }#landing-page-features{
+        padding-top: 0px;
+    }
+
+    .singleFeature:nth-child(even){
+        margin-top: 8px;
+    }
+
+}
+@media screen and (max-width: 660px) {
+    .landing-page-images > img{
+        height: 50px;
+        width: 50px;
+        object-position: top;
+        box-shadow: -2px 6px 0.4rem rgba(0, 0, 0, 0.507), 4px -4px 1rem rgb(255 255 255 / 1%);
+    }.landing-page-images h2{
+        display: none;
+
+    }.landing-page-images:hover > img{
+        filter: none;
+    }
+    #landing-page-images-con #first-img-con{
+        margin-bottom: 0px;
+    }
+    #first-img-con .landing-page-images:first-child{
+        transform: translateX(10px);
+    }
+    #landing-page-images-con div:not(#first-img-con){
+        margin-left: -20px;
+    }
+    #landing-page-images-con > div{
+        flex-direction: column;
+    }.landing-page-images{
+        margin: 0px;
+        margin-bottom: 20px;
+    }#bottom-footer{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        
+    }#bottom-footer section{
+        margin-bottom: 30px;
+    }#bottom-footer a{
+        margin-left: 0px;
+        margin-right: 10px;
+        font-size: 13px;
+    }#bottom-footer p{
+        font-size: 13px;
+        display: none;
+    }.vertical-scroll-item, .emptyCard{
+        height: 200px;
+        width: 170px;
+    }.hidden-gradient{
+        height: 210px;
+        margin-top: 25px;
+    }.vertical-scroll-item h2 {
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+        font-size: 16px;
+        transform: translate(-50%, 0px);
+        opacity: 1;
+        transition: .2s;
+        white-space: nowrap;
+        width: 100%;
+        padding-bottom: 19px;
+        padding-top: 65px;
+        text-align: center;
+        background: linear-gradient(359deg, #0a0a0aea, transparent);
+    }.vertical-scroll-item:hover h2{
+        transform: translate(-50%, 0px);
+    }.hidden-vertical-scroll-text{
+        display: none;
+    }
+    .vertical-scroll-item:hover img{
+        filter: none;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    #landing-page-features-intro-con img{
+        height: 132px;
+        margin-right: -100px;
+    } 
+}
+@media screen and (max-width: 548px) {
+    #landing-page-intro{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .landing-page-images > img{
+        height: 100px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    #landing-page-images-con{
+        margin-top: 50px;
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    #first-img-con .landing-page-images:first-child{
+        transform: none
+    }
+    #landing-page-images-con div:not(#first-img-con){
+        margin-left: 0px
+    }
+    #landing-page-images-con > div{
+        flex-direction: row;
+        width: 48.5%;
+        justify-content: space-between;
+    }.landing-page-images{
+        margin: 0px;
+        margin-bottom: 0px;
+        width: 46.5%;
+    }
+    .single-faq h3{
+        font-size: 15px;
+    }
+    .opened-faq p {
+        font-size: 14px;
+    }
+    
+
+}
+@media screen and (max-width: 470px) {
+    #landing-page-features-contents{
+        margin: 0px 30px
+    }.singleFeature{
+        margin: 5px;
+        width: 160px;
+        border-radius: 20px;
+    }.singleFeature img{
+        height: 60px;
+        width: 60px;
+    }.singleFeature:nth-child(even){
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav-bar, footer{
+        padding: 30px;
+    }.vertical-scroll{
+        padding: 0px 30px;
+    }.vertical-scroll-con h4 {
+        margin-left: 30px;
+    }.right-arrow-con {
+        right: 20px;
+    }.left-arrow-con {
+        left: 20px;
+    }#carosal-details, #details-page-downShadow {
+        padding: 30px;
+        padding-top: 250px;
+        padding-bottom: 40px;
+    }#carosal-details h1{
+        font-size: 30px;
+    }#carosal-details h2,.explore-btn{
+        font-size: 16px;
+    }#landing-page-features-intro{
+        margin-right: 30px;
+        padding-left: 0px;
+    }#FAQ{
+        padding: 20px 30px;
+        padding-bottom: 150px;
+    }#landing-page-intro{
+        padding: 0px 30px;
+    }h1,#landing-page-features-intro h2{
+        font-size: 28px;
+    }#landing-page-intro > section > p{
+        font-size: 13px;
+        width: auto;
+        max-width: 320px;
+        line-height: 18px;
+    }#landing-page-images-con{
+        flex-direction: row;
+    } #landing-page-features-intro-con img{
+        height: 100px;
+        margin-right: -40px;
+        margin-left: 0px;
+        margin-bottom: 70px;
+    }#landing-page-features-intro h2{
+        min-width: unset;
+        width: 260px;
+    }
+
+    #landing-page-features-contents{
+        margin: 0px 20px
+    }.singleFeature{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .singleFeature{
+        width: 120px;
+    }
+    .singleFeature img{
+        height: 30px;
+        width: 30px;
+    }.singleFeature h3{
+        white-space: unset;
+        font-size: 13px;
+    }#top-footer > img{
+        height: 20px;
+    }
+}

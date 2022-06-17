@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,25 +8,49 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script defer src='main.js'></script>
+    <script defer src='explore.js'></script>
 </head>
+
 <body>
-    <div class="nav-bar explore-nav" id = "explore-navbar">
-        <img id = "logo" src="./Images/logo.svg">
-        <nav>
-            <a href="./Index.html" >Home</a>
-            <a href="./explore.html" class="selected">Explore</a>
+    <div class="nav-bar explore-nav" id="explore-navbar">
+        <img id="logo" src="./Images/logo.svg">
+        <nav class="hidden-nav-Items">
+            <a href="./Index.html" class="selected">Home</a>
+            <a href="./explore.html">Explore</a>
             <a href="./stream.html">Stream</a>
             <a href="#">Contact Us</a>
         </nav>
-        <div id = "nav-end">
-            <img src="./Images/Utilities/search.svg"> 
-            <img src="./Images/Utilities/cart.svg">            
+        <div class="hidden-nav-Items" id="nav-end">
+            <img src="./Images/Utilities/search.svg">
+            <img src="./Images/Utilities/cart.svg">
             <div>
                 <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
             </div>
+        </div>
+        <div class="mobile-nav">
+            <div id="mobile-nav-bar" class="mobile-menu">
+                <nav class="">
+                    <a href="./Index.html" class="selected">Home</a>
+                    <a href="./explore.html">Explore</a>
+                    <a href="./stream.html">Stream</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Login</a>
+                    <a href="#">Sign up</a>
+                </nav>
+                <img class="mobile-nav-icon" src="./Images/Utilities/cart.svg">
+                <img class="mobile-nav-icon mobile-search" src="./Images/Utilities/search.svg">
+            </div>
+            <div onclick="toggleHam()" class="ham-bugger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
         </div>
     </div>
 
@@ -39,34 +64,36 @@
             </div>
             <img src="./Images/carosal/img1.png">
         </div>
-        
-        <div class="vertical-scroll-con"> 
+
+        <div class="vertical-scroll-con">
             <h4>Upcoming Live-streams</h4>
             <div class="left-gradient hidden-gradient"></div>
             <div class="right-gradient hidden-gradient"></div>
-            <div class="arrow-con left-arrow-con " id="ucl-left" onclick="scrollVertical('upcoming-liveStream', true)" >
+            <div class="arrow-con left-arrow-con " id="ucl-left" onclick="scrollVertical('upcoming-liveStream', true)">
                 <div class="arrow"></div>
             </div>
-            <div class="arrow-con right-arrow-con " id = "ucl-right" onclick="scrollVertical('upcoming-liveStream', false)" >
+            <div class="arrow-con right-arrow-con " id="ucl-right"
+                onclick="scrollVertical('upcoming-liveStream', false)">
                 <div class="arrow"></div>
             </div>
 
-            <div class="vertical-scroll"  id="upcoming-liveStream">           
-            
+            <div class="vertical-scroll" id="upcoming-liveStream">
+
                 <div class="vertical-scroll-content">
+                    <!-- I added this hidden class to hide this text for mobile, to prevent unnecessary repetition -->
                     <div class="vertical-scroll-item">
-                        <img src="./Images/Live/ucl1.png"/>
-                        <h2>BUY NOW</h2>
+                        <img src="./Images/Live/ucl1.png" />
+                        <h2 class="hidden-vertical-scroll-text">BUY NOW</h2>
                         <div class="vertical-scroll-item-date">25<sup>th</sup> <span>July</span> </div>
                     </div>
                     <div class="vertical-scroll-item">
-                        <img src="./Images/Live/ucl2.png"/>
-                        <h2>BUY NOW</h2>
+                        <img src="./Images/Live/ucl2.png" />
+                        <h2 class="hidden-vertical-scroll-text">BUY NOW</h2>
                         <div class="vertical-scroll-item-date">28<sup>th</sup> <span>Sept.</span> </div>
                     </div>
                     <div class="vertical-scroll-item">
-                        <img src="./Images/Live/ucl3.png"/>
-                        <h2>BUY NOW</h2>
+                        <img src="./Images/Live/ucl3.png" />
+                        <h2 class="hidden-vertical-scroll-text">BUY NOW</h2>
                         <div class="vertical-scroll-item-date">1<sup>st</sup> <span>Jan.</span> </div>
                     </div>
 
@@ -79,100 +106,100 @@
                     <div class="emptyCard">
                         <img src="./Images/logo.svg" alt="">
                     </div>
-                  
+
                 </div>
-           
+
             </div>
         </div>
 
-        <div class="vertical-scroll-con"> 
+        <div class="vertical-scroll-con">
             <h4>Past Live-streams</h4>
             <div class="left-gradient hidden-gradient"></div>
             <div class="right-gradient hidden-gradient"></div>
-            <div class="arrow-con left-arrow-con " id="pls-left" onclick="scrollVertical('past-liveStream', true)" >
+            <div class="arrow-con left-arrow-con " id="pls-left" onclick="scrollVertical('past-liveStream', true)">
                 <div class="arrow"></div>
             </div>
-            <div class="arrow-con right-arrow-con " id = "pls-right" onclick="scrollVertical('past-liveStream', false)" >
+            <div class="arrow-con right-arrow-con " id="pls-right" onclick="scrollVertical('past-liveStream', false)">
                 <div class="arrow"></div>
             </div>
 
-            <div class="vertical-scroll"  id="past-liveStream">           
-            
+            <div class="vertical-scroll" id="past-liveStream">
+
                 <div class="vertical-scroll-content">
                     <div class="vertical-scroll-item">
-                        <img src="./Images/Live/pls1.png"/>
-                        <h2>WATCH NOW</h2>
+                        <img src="./Images/Live/pls1.png" />
+                        <!-- I added this hidden class to hide this text for mobile, to prevent unnecessary repetition -->
+                        <h2 class="hidden-vertical-scroll-text">WATCH NOW</h2>
                         <div class="vertical-scroll-item-date">25<sup>th</sup> <span>July</span> </div>
                     </div>
                     <div class="vertical-scroll-item">
-                        <img src="./Images/Live/pls2.png"/>
-                        <h2>WATCH NOW</h2>
+                        <img src="./Images/Live/pls2.png" />
+                        <h2 class="hidden-vertical-scroll-text">WATCH NOW</h2>
                         <div class="vertical-scroll-item-date">28<sup>th</sup> <span>Sept.</span> </div>
-                    </div>                                 
+                    </div>
                 </div>
-           
+
             </div>
         </div>
-        
-        <div class="vertical-scroll-con"> 
+
+        <div class="vertical-scroll-con">
             <h4>Featured Artist</h4>
             <div class="left-gradient hidden-gradient"></div>
             <div class="right-gradient hidden-gradient"></div>
-            <div class="arrow-con left-arrow-con " id="fa-left" onclick="scrollVertical('featuredArtist', true)" >
+            <div class="arrow-con left-arrow-con " id="fa-left" onclick="scrollVertical('featuredArtist', true)">
                 <div class="arrow"></div>
             </div>
-            <div class="arrow-con right-arrow-con " id = "fa-right" onclick="scrollVertical('featuredArtist', false)" >
+            <div class="arrow-con right-arrow-con " id="fa-right" onclick="scrollVertical('featuredArtist', false)">
                 <div class="arrow"></div>
             </div>
 
-            <div class="vertical-scroll"  id="featuredArtist">           
-            
+            <div class="vertical-scroll" id="featuredArtist">
+
                 <div class="vertical-scroll-content">
                     <div class="vertical-scroll-item featuredArtist">
-                        <img src="./Images/Live/A1.png"/>
+                        <img src="./Images/Live/A1.png" />
                         <h2>DAVID O</h2>
                     </div>
-                    <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A2.png"/>
-                        <h2>WIZKID</h2>
-                    </div>  
-                    <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A3.png"/>
-                        <h2>ASA</h2>
-                    </div>  
-                    <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A4.png"/>
-                        <h2>BURNA BOY</h2>
-                    </div>  
-                     <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A5.png"/>
-                        <h2>2 BABA</h2>
-                    </div>      
                     <div class="vertical-scroll-item featuredArtist">
-                        <img src="./Images/Live/A1.png"/>
+                        <img src="./Images/Live/A2.png" />
+                        <h2>WIZKID</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A3.png" />
+                        <h2>ASA</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A4.png" />
+                        <h2>BURNA BOY</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A5.png" />
+                        <h2>2 BABA</h2>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A1.png" />
                         <h2>DAVID O</h2>
                     </div>
-                    <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A2.png"/>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A2.png" />
                         <h2>WIZKID</h2>
-                    </div>  
-                    <div class="vertical-scroll-item featuredArtist" >
-                        <img src="./Images/Live/A3.png"/>
+                    </div>
+                    <div class="vertical-scroll-item featuredArtist">
+                        <img src="./Images/Live/A3.png" />
                         <h2>ASA</h2>
-                    </div>              
-                                                   
+                    </div>
+
                 </div>
-           
+
             </div>
         </div>
 
     </div>
-
     <footer class="black-footer">
         <div id="top-footer">
             <img src="./Images/logo.svg">
             <section>
-                <img id ="facebook" src="./Images/Utilities/Social/facebook.svg">
+                <img id="facebook" src="./Images/Utilities/Social/facebook.svg">
                 <img src="./Images/Utilities/Social/twitter.svg">
                 <img src="./Images/Utilities/Social/whatsapp.svg">
                 <img src="./Images/Utilities/Social/instagram.svg">
@@ -180,10 +207,14 @@
         </div>
         <div id="bottom-footer">
             <p>© 2022 Kosa Inc. </p>
-            <a href="#" class="">Terms of Service</a>
-            <a href="#" class="">Privacy Policy</a>
-            <a href="#" class="">Customer Service</a>
+            <section>
+                <a href="#" class="">Terms</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Help?</a>
+            </section>
+
         </div>
     </footer>
 </body>
+
 </html>
