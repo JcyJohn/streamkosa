@@ -126,7 +126,20 @@ body{
 }
 
 .mobile-nav{
-      display: none;
+    display: none;
+}.streamingServiceMob{
+    margin-top: -7px;
+    margin-right: 25px;
+    height: 23px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s;
+}.streamingServiceMob:hover{
+    opacity: 1;
+}#streamingServiceMobCon{
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .ham-bugger div{
     height: 2px;
@@ -177,7 +190,9 @@ body{
     color: white;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
+    height: 350px;
+}.mobile-menu nav a{
+    font-size: 16px;
 }
 
 .mobile-nav-icon{
@@ -749,20 +764,24 @@ footer{
     width: 100%;
 }
 
-#streaming-devices{
+.streaming-devices{
     min-width: 300px;
     width: 300px;
+    transform: translateX(0px);
     padding: 25px;
     border-radius: 12px;
     background-color:rgba(255, 255, 255, 0.024) ;
     position: sticky;
     top:130px;
     left: 60px;
+    margin-right: 30px;
     bottom: 30px;
     height: fit-content;
+    transition: .3s;
+    opacity: 1;
 
 }
-#streaming-devices h4{
+.streaming-devices h4{
     color: #f2a966;
     font-size: 15px;
     margin-bottom: 25px;
@@ -792,7 +811,7 @@ footer{
     opacity: .8;
 }
 
-#streaming-devices button{
+.streaming-devices button{
     width: 100%;
     padding: 8px 20px;
     border-radius: 7px;
@@ -801,14 +820,13 @@ footer{
     cursor: pointer;
     margin-bottom: 40px;
 }
-#streaming-devices p{
+.streaming-devices p{
     font-size: 13px;
     opacity: .4;
 }
 
 
 #streams{
-    margin-left: 30px;
     display: grid;
     width: 100%;
 }
@@ -818,12 +836,12 @@ footer{
 		display: grid;
 		grid-gap: 25px;
 		justify-items: unset;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 	}
 }
 
 .single-stream{
-    min-width: 250px;
+    min-width: 235px;
     position: relative;
     overflow: hidden;
     height: fit-content;
@@ -943,6 +961,12 @@ footer{
     padding: 0px;
     opacity: 0;
 
+}.bottomtooltip{
+    top: auto;
+    bottom: -40px;
+    left: auto;
+    transform: none;
+    right: 0;
 }
 .details-but2{
     width: fit-content;
@@ -969,9 +993,10 @@ footer{
 
 /* Login Start */
 .transparent-nav{
-    background-color: transparent;
-    background: none;
     background-image: none;
+    background-color: #0a0a0a;
+    background: linear-gradient(0deg, rgba(10,10,10,0) 0%, rgba(10, 10, 10, 0.80) 35%,rgb(10, 10, 10) 100%);
+
 }
 .transparent-nav div{
     opacity: .6;
@@ -1085,15 +1110,17 @@ footer{
     font-size: 13px;
     align-items: flex-start;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     opacity: .2;
+    left: 8px;
 
-}.login-outer-footer sapn{
-    position: absolute;
+}.join-footer{
+    justify-content: flex-end;
 }
 .login-outer-footer a{
     color: white;
+    margin: 0px 30px;
 }.confirmBox{
     padding: 30px;
 }
@@ -1225,6 +1252,7 @@ input::-webkit-inner-spin-button,
         max-width: 380px;
         margin-right: 10px;
     }
+
 }
 @media screen and (max-width: 840px) {
    
@@ -1236,8 +1264,10 @@ input::-webkit-inner-spin-button,
         font-size: 16px;
     }#landing-page-intro{
         align-items: center;
-    }.nav-bar, footer, #carosal-details, #details-page-downShadow {
+    }.nav-bar,#streamPage, footer, #carosal-details, #details-page-downShadow {
         padding: 40px;
+    }#streamPage{
+        padding-top: 0px;
     }.vertical-scroll{
         padding: 0px 40px;
     }.vertical-scroll-con h4 {
@@ -1249,7 +1279,7 @@ input::-webkit-inner-spin-button,
         padding: 20px 40px;
         padding-bottom: 150px;
     }.mobile-nav{
-        display: block;
+        display: flex;
     }.hidden-nav-Items{
         display: none !important ;
     }#landing-page-intro{
@@ -1266,6 +1296,15 @@ input::-webkit-inner-spin-button,
         margin-bottom: 15px;
     }
 
+    .hide-stream{
+        overflow: hidden;
+        opacity: 0;
+        width: 0px;
+        min-width: 0px;
+        padding: 0px;
+        margin: 0px;
+
+    }
 
     #landing-page-features-intro h2{
         font-size: 34px;
@@ -1355,7 +1394,9 @@ input::-webkit-inner-spin-button,
     #landing-page-features-intro-con img{
         height: 132px;
         margin-right: -100px;
-    } 
+    }.streamingServiceMob{
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 548px) {
     #landing-page-intro{
@@ -1397,7 +1438,15 @@ input::-webkit-inner-spin-button,
         font-size: 14px;
     }
     
-
+    .login-container{
+        width: 85%;
+    }.login-container form{
+        padding: 30px 20px;
+    }.account-type{
+        padding: 0px 20px;
+    }.Text-and-help{
+        padding: 14px 20px;
+    }
 }
 @media screen and (max-width: 470px) {
     #landing-page-features-contents{
@@ -1415,8 +1464,10 @@ input::-webkit-inner-spin-button,
 }
 
 @media screen and (max-width: 425px) {
-    .nav-bar, footer{
+    .nav-bar,#streamPage, footer{
         padding: 30px;
+    }.transparent-nav{
+        padding: 40px 30px;
     }.vertical-scroll{
         padding: 0px 30px;
     }.vertical-scroll-con h4 {
@@ -1467,7 +1518,7 @@ input::-webkit-inner-spin-button,
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
     .singleFeature{
         width: 120px;
     }
@@ -1479,5 +1530,16 @@ input::-webkit-inner-spin-button,
         font-size: 13px;
     }#top-footer > img{
         height: 20px;
+    }.login-container form{
+        padding: 0;
+        padding-top: 30px;
+    }.login-container{
+        width: 90%;
+        top: 80px;
+        background-color: transparent;
+    }.account-type{
+        padding: 0px;
+    }.Text-and-help{
+        padding: 14px 0px;
     }
 }

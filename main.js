@@ -50,6 +50,12 @@ const toggleHam =() =>{
 //   /  console.log("toggled menu")
 
     const mobile_nav =  document.getElementById("mobile-nav-bar")
-    mobile_nav.className  = mobile_nav.classList.contains("show-mobile-menu") ? "mobile-menu" : "mobile-menu show-mobile-menu"
+    const isOpened = mobile_nav.classList.contains("show-mobile-menu") 
+    mobile_nav.className  = isOpened ? "mobile-menu" : "mobile-menu show-mobile-menu"
 }
 
+
+const ToggleStreamingDevices = () =>{
+    const streamDev = document.getElementById("streaming-devices-con");
+    streamDev.className = streamDev.classList.contains("hide-stream") ? "streaming-devices" : "streaming-devices hide-stream"
+}
