@@ -906,11 +906,13 @@ footer{
     position: absolute;
     top: 130px;
     left:60px;
+    right: 60px;
     z-index: 10;
 }#details-page-details h1{
-    font-size: 45px;
+    /* font-size: 45px; */
     margin-bottom: 8px;
-    white-space: nowrap;
+    max-width: 800px;
+    width: 100%;
 }
 
 .more-details-section{
@@ -920,12 +922,11 @@ footer{
 .more-details-section div{
     margin-bottom: 10px;
     font-size: 15px;
-    font-weight: 200;
 }
 
 .details-notice{
     opacity: .5;
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 .details-button-group, .details-but2,.tooltip-con{
@@ -940,6 +941,7 @@ footer{
 }.details-button-group button{
     margin-right: 20px;
     font-size: 16px;
+    white-space: nowrap;
 }.details-btn{
     background-color: transparent;
     border-color: white;
@@ -971,19 +973,18 @@ footer{
 .details-but2{
     width: fit-content;
     height: fit-content;
+    margin-right: 10px;
 }
 .tooltip-con:hover .tooltip{
     opacity: 1;
     padding: 6px 12px;
     height: 25px;
 }
-.details-but2:hover  img{
-    transform: rotate(10deg);
-}
+
 
 .details-details{
     font-size: 13px;
-    width: 500px;
+    max-width: 500px;
     margin-top: 35px;
     line-height: 21px;
     opacity: .5;
@@ -1251,6 +1252,8 @@ input::-webkit-inner-spin-button,
         width: auto;
         max-width: 380px;
         margin-right: 10px;
+    }#details-page-details h2{
+        font-size: 18px;
     }
 
 }
@@ -1266,6 +1269,9 @@ input::-webkit-inner-spin-button,
         align-items: center;
     }.nav-bar,#streamPage, footer, #carosal-details, #details-page-downShadow {
         padding: 40px;
+    }#details-page-details{
+        left: 40px;
+        right: 40px;
     }#streamPage{
         padding-top: 0px;
     }.vertical-scroll{
@@ -1319,7 +1325,14 @@ input::-webkit-inner-spin-button,
     .singleFeature:nth-child(even){
         margin-top: 8px;
     }
-
+    #details-page-details{
+        top: 110px;
+    }
+    .streaming-devices{
+        left: 40px;
+        top: 95px;
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width: 660px) {
     .landing-page-images > img{
@@ -1397,6 +1410,10 @@ input::-webkit-inner-spin-button,
     }.streamingServiceMob{
         opacity: 1;
     }
+    .details-button-group button{
+        font-size: 14px;padding: 13px 20px;
+        margin-right: 12px;
+    }
 }
 @media screen and (max-width: 548px) {
     #landing-page-intro{
@@ -1447,6 +1464,7 @@ input::-webkit-inner-spin-button,
     }.Text-and-help{
         padding: 14px 20px;
     }
+
 }
 @media screen and (max-width: 470px) {
     #landing-page-features-contents{
@@ -1466,6 +1484,9 @@ input::-webkit-inner-spin-button,
 @media screen and (max-width: 425px) {
     .nav-bar,#streamPage, footer{
         padding: 30px;
+    }#details-page-details{
+        left: 30px;
+        right: 30px;
     }.transparent-nav{
         padding: 40px 30px;
     }.vertical-scroll{
@@ -1515,6 +1536,12 @@ input::-webkit-inner-spin-button,
         margin: 0px 20px
     }.singleFeature{
         width: 150px;
+    }
+    .more-details-section div{
+        font-size: 14px;
+    }
+    #watch-trailers{
+        display: none;
     }
 }
 
