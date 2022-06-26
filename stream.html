@@ -41,9 +41,9 @@
             <img class="mobile-nav-icon mobile-search" src="./Images/Utilities/search.svg"> 
         </div>
         
-        <div onclick="ToggleStreamingDevices()"  id="streamingServiceMobCon" class="tooltip-con">
+        <div onclick="ToggleStreamingDevices()"  id="streamingServiceMobCon">
             <img class="streamingServiceMob" src="./Images/Utilities/TV.svg">
-            <div class="tooltip bottomtooltip">Streaming Devices</div>
+            <div>Devices</div>
         </div>
       
         <div onclick="toggleHam()" class="ham-bugger">
@@ -65,8 +65,18 @@
 
     
     <div id="streamPage" >
+       
+        <div onclick="ToggleStreamingDevices()" class="overlay" id="overlay"></div>
+        
         <section id="streaming-devices-con" class="streaming-devices hide-stream">
-            <h4>Streaming devices</h4>
+            <div class="streaming-device-title">
+                 <h4>Streaming devices</h4>
+                 <div class="close-icon" onclick="ToggleStreamingDevices()">
+                    <div></div>
+                    <div></div>
+                 </div>
+            </div>
+           
     
             <section class="single-streaming-device">
                 <div>
@@ -135,12 +145,12 @@
             </div>
         </div>
     </div>
-  
+
     <footer class="black-footer">
         <div id="top-footer">
             <img src="./Images/logo.svg">
             <section>
-                <img id ="facebook" src="./Images/Utilities/Social/facebook.svg">
+                <img id="facebook" src="./Images/Utilities/Social/facebook.svg">
                 <img src="./Images/Utilities/Social/twitter.svg">
                 <img src="./Images/Utilities/Social/whatsapp.svg">
                 <img src="./Images/Utilities/Social/instagram.svg">
@@ -148,9 +158,12 @@
         </div>
         <div id="bottom-footer">
             <p>© 2022 Kosa Inc. </p>
-            <a href="#" class="">Terms of Service</a>
-            <a href="#" class="">Privacy Policy</a>
-            <a href="#" class="">Customer Service</a>
+            <section>
+                <a href="#" class="">Terms</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Help?</a>
+            </section>
+
         </div>
     </footer>
 </body>

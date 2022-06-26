@@ -57,5 +57,6 @@ const toggleHam =() =>{
 
 const ToggleStreamingDevices = () =>{
     const streamDev = document.getElementById("streaming-devices-con");
+    document.getElementById("overlay").style.display = streamDev.classList.contains("hide-stream") ? "block" : "none";
     streamDev.className = streamDev.classList.contains("hide-stream") ? "streaming-devices" : "streaming-devices hide-stream"
 }
