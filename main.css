@@ -129,18 +129,16 @@ body{
     display: none;
 }.streamingServiceMob{
     margin-top: -7px;
-    margin-right: 10px;
     height: 23px;
     cursor: pointer;
-    opacity: .8;
-    transition: .2s;
-}.streamingServiceMob:hover{
     opacity: 1;
+    transition: .2s;
+    display: none;
 }#streamingServiceMobCon{
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .ham-bugger div{
     height: 2px;
@@ -924,7 +922,7 @@ footer{
     left:0;
     height: 100%;
     background-color: #257000;
-    width: 90%;
+    width: 100%;
     background: linear-gradient(-90deg, rgba(10,10,10,0) 0%, rgba(10, 10, 10, 0.60) 55%,rgb(10, 10, 10) 100%);
 
 }
@@ -965,7 +963,7 @@ footer{
     cursor:pointer;
     transition: .2s;
 }.details-button-group button{
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 16px;
     white-space: nowrap;
 }.details-btn{
@@ -1475,6 +1473,8 @@ input::-webkit-inner-spin-button,
     }.openStreammingDevices img{
         width: 25px;
         margin-right: 10px;
+    }.streamingServiceMob{
+        display: block;
     }
 }
 
