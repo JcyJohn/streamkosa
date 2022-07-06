@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,294 @@
     <title>Cart Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script defer src='main.js'></script>
 </head>
+
 <body>
     <div class="background-light-con static-light">
         <div class="background-light" id="left"></div>
         <div class="background-light" id="middle"></div>
         <div class="background-light" id="right"></div>
     </div>
-    <div>
-        <div>Cart(8)</div>
+    <div id="cart-page-con">
+        <div id="cart-page-nav">
+            <div class="real-arrow">
+                <div class="arrow-head"></div>
+                <div class="arrow-tail"></div>
+            </div>
+            <div>Cart</div>
+        </div>
+        <div id="cart-page-data-con">
+            <div class="cart-cards-container">
+                <div class="cart-card">
+                    <div class="cart-card-header">
+                        <div class="cart-title">Afro Nation Festival 2022</div>
+                        <div class="close-icon cart-remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="cart-date">6th July 2022, 2:30 (WAT)</div>
+                    <div class="cart-gift">
+                        <div class="collection-of-emails">
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recipient@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">re@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recip@email.com</div>
+                            </div>
+
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="recipient@email.com">
+                            <button>Add Email</button>
+                        </div>
+                        <div class="cart-gift-info">*A unique link of the above show will be sent to each
+                            recipient.</div>
+                    </div>
+                    <div class="cart-item-bottom-sec">
+                        <div>
+                            <label class="checkboxLabel">
+                                <input type="checkbox">
+                                <div class="checkBoxNew">
+                                    <div class="checker"></div>
+                                </div>
+                                <span> Buy as a Gift?</span>
+                            </label>
+                        </div>
+                        <div class="cart-price">₦5,000</div>
+                    </div>
+                </div>
+                <div class="cart-card">
+                    <div class="cart-card-header">
+                        <div class="cart-title">Afro Nation Festival 2022</div>
+                        <div class="close-icon cart-remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="cart-date">6th July 2022, 2:30 (WAT)</div>
+                    <div class="cart-gift hide-gift">
+                        <div class="collection-of-emails">
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recipient@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">re@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recip@email.com</div>
+                            </div>
+
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="recipient@email.com">
+                            <button>Add Email</button>
+                        </div>
+                        <div class="cart-gift-info">*A unique link of the above show will be sent to each
+                            recipient.</div>
+                    </div>
+                    <div class="cart-item-bottom-sec">
+                        <div>
+                            <label class="checkboxLabel">
+                                <input type="checkbox">
+                                <div class="checkBoxNew">
+                                    <div class="checker"></div>
+                                </div>
+                                <span> Buy as a Gift?</span>
+                            </label>
+                        </div>
+                        <div class="cart-price">₦5,000</div>
+                    </div>
+                </div>
+                <div class="cart-card">
+                    <div class="cart-card-header">
+                        <div class="cart-title">Afro Nation Festival 2022</div>
+                        <div class="close-icon cart-remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="cart-date">6th July 2022, 2:30 (WAT)</div>
+                    <div class="cart-gift">
+                        <div class="collection-of-emails">
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recipient@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">re@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recip@email.com</div>
+                            </div>
+
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="recipient@email.com">
+                            <button>Add Email</button>
+                        </div>
+                        <div class="cart-gift-info">*A unique link of the above show will be sent to each
+                            recipient.</div>
+                    </div>
+                    <div class="cart-item-bottom-sec">
+                        <div>
+                            <label class="checkboxLabel">
+                                <input type="checkbox">
+                                <div class="checkBoxNew">
+                                    <div class="checker"></div>
+                                </div>
+                                <span> Buy as a Gift?</span>
+                            </label>
+                        </div>
+                        <div class="cart-price">₦5,000</div>
+                    </div>
+                </div>
+                <div class="cart-card">
+                    <div class="cart-card-header">
+                        <div class="cart-title">Afro Nation Festival 2022</div>
+                        <div class="close-icon cart-remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="cart-date">6th July 2022, 2:30 (WAT)</div>
+                    <div class="cart-gift hide-gift">
+                        <div class="collection-of-emails">
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recipient@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">re@email.com</div>
+                            </div>
+                            <div class="Single-recipient">
+                                <div class="close-icon Single-recipient-delete">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="Single-recipient-email">recip@email.com</div>
+                            </div>
+
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="recipient@email.com">
+                            <button>Add Email</button>
+                        </div>
+                        <div class="cart-gift-info">*A unique link of the above show will be sent to each
+                            recipient.</div>
+                    </div>
+                    <div class="cart-item-bottom-sec">
+                        <div>
+                            <label class="checkboxLabel">
+                                <input type="checkbox">
+                                <div class="checkBoxNew">
+                                    <div class="checker"></div>
+                                </div>
+                                <span> Buy as a Gift?</span>
+                            </label>
+                        </div>
+                        <div class="cart-price">₦5,000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-con">
+                <div class="cart-summery-title">Cart Summery (3)</div>
+                <table class="cart-summary">               
+                        <tr>
+                            <td> Afro Nation Festival <span>x5</span></td>
+                            <td>₦ 5,000</td>
+                        </tr>
+                        <tr>
+                            <td> NEIO Festival <span>x2</span></td>
+                            <td>₦ 25,000</td>
+                        </tr>
+                        <tr>
+                            <td> Afro Nation Festival 2022 <span>x1</span></td>
+                            <td>₦ 5,000</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>₦ 35,000</td>
+                        </tr>
+                </table>
+
+                <div class="cart-summery-title">Select Payment Method</div>
+                <div>
+                    <div class="single-payment-method active">
+                        <div>Card</div>
+                        <img src="./Images/Utilities/Card.png">
+                    </div>
+                    <div class="single-payment-method">
+                        <div>Crypto</div>
+                        <img src="./Images/Utilities/coin.png">                        
+                    </div>
+                    <div class="single-payment-method">
+                        <div>Mobile Money</div>
+                        <img src="./Images/Utilities/paga.png">
+                    </div>
+                </div>
+
+                <button class="checkoutbutton">Pay <span>₦ 35,000,000</span></button>
+
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>

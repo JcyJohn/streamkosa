@@ -790,8 +790,22 @@ footer{
     justify-content: space-between;
     margin-bottom: 25px;
     padding-right: 20px;
-}.close-icons{
+}#closeStreamDevIcon{
     display: none;
+}
+.close-icon{
+    position: relative;
+    cursor:pointer;
+}.close-icon div{
+    width: 18px;
+    height: 3px;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.377) ;
+    position: absolute;
+}.close-icon div:first-child{
+    transform: rotate(45deg);
+}.close-icon div:not(.close-icon div:first-child){
+    transform: rotate(-45deg);
 }
 .streaming-devices h4{
     color: #f2a966;
@@ -1243,6 +1257,252 @@ input::-webkit-inner-spin-button,
     margin: 0;
 }
 
+/* Cart Page */
+
+#cart-page-con{
+    padding: 100px 0px;
+
+}#cart-page-data-con{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 60px;
+}
+#cart-page-nav{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+   padding: 60px;
+   padding-bottom: 30px;
+   top: 0px;
+    position: fixed;
+    width:100%;
+    background: linear-gradient(180deg,#0a0a0a 10%, #0a0a0ae8 50%, #0a0a0a5e 100%);
+    z-index: 100;
+}
+.checkout-con{
+    width: 400px;
+    height: 100vh;
+    background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.014) 15%,transparent 90%);
+    position: sticky;
+    top: 60px;
+    padding: 30px;
+}.cart-summery-title{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.897);
+}.cart-summary{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.678);
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}.cart-summary td{
+    padding: 4px 0px;
+    width:fill;
+}.cart-summary  span{
+    color: #ffc876;
+}.cart-summary tr:last-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+}.cart-summary tr:nth-last-child(2) td{
+    padding-bottom: 17px;
+}.cart-summary tr:last-child td{
+    padding-top: 13px;
+}
+
+.single-payment-method{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 8px 15px;
+    border-radius:15px;
+    margin: 14px 0px;
+    cursor: pointer;
+    transition: .1s;
+    font-size: 15px;
+}.single-payment-method:hover{
+    background-color: rgba(255, 255, 255, 0.062);
+}
+
+.single-payment-method.active{
+    color:#0a0a0a;
+    background-color: rgba(255, 255, 255, 0.938);
+}
+
+.single-payment-method img{
+    height: 35px;
+}
+
+.arrow-head{
+    border: 2px solid rgba(255, 255, 255, 0.8);;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    border-top: 0px;
+    border-right:0px;
+}
+.arrow-tail{
+    width: 25px;
+    border-radius: 2px;
+    height: 2px;
+    transform: translateX(-11px);
+    background-color: rgba(255, 255, 255, 0.8);
+}.real-arrow{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.cart-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-card{
+    max-width: 500px;
+    min-width: 350px;
+    height: fit-content;
+    padding: 25px;
+    position: relative;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.014);
+}.cart-title{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.897);
+    margin-bottom: 5px;
+}.cart-date{
+    font-weight: 300;
+    opacity: .5;
+    font-size: 15px;
+}.collection-of-emails{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0px;
+}.Single-recipient{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.048);
+}.cart-card-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.cart-remove-item{
+    opacity: .4;
+    margin-top: -10px;
+}.Single-recipient-delete div{
+    width: 13px;
+    height: 2px;
+    opacity: .4;
+}.Single-recipient-email{
+    margin-left: 25px;
+}.Single-recipient-email{
+    font-size: 13px;
+    opacity: .5;
+}
+
+.email-input{
+    display: flex;
+}.email-input input{
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 0.863);
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.11);
+}#cart-page-data-con button{
+    background-color: #f4b860;
+    border: 1px solid #f4b860;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}.checkoutbutton{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: auto;
+    transition: .2s;
+}.checkoutbutton span{
+    margin-left: 50px;
+    font-size: 16px;
+}.checkoutbutton:hover{
+    color: white !important; 
+    background-color: transparent !important;
+    border-color: white !important;
+    font-weight: 400;
+}.cart-gift-info{
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 12px;
+    opacity: .3;
+}.checkboxLabel{
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+}
+.checkboxLabel input{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkBoxNew{
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    border:1px solid rgba(255, 255, 255, 0.534);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+}
+
+.checker{
+    height: 11px;
+    width: 11px;
+    border-radius: 20%;
+}.cart-gift{
+    transition: .4s;
+    margin-top: 15px;
+}
+.hide-gift{
+    height: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.checkboxLabel input:checked ~ .checkBoxNew .checker{
+    background-color: #f4b860;
+}.checkboxLabel input:checked ~ .checkBoxNew{
+    border-color: #f4b860;
+}
+.cart-item-bottom-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+/* End of Cart Page */
+
+
+
+
 
 @media screen and (max-width: 1250px) {
     #landing-page-features-intro-con img{
@@ -1437,19 +1697,8 @@ input::-webkit-inner-spin-button,
         z-index:201;
         top: 0;
         left: 0;
-    }.close-icon{
-        position: relative;
+    }#closeStreamDevIcon{
         display: block;
-    }.close-icon div{
-        width: 18px;
-        height: 3px;
-        border-radius: 5px;
-        background-color:rgba(255, 255, 255, 0.377) ;
-        position: absolute;
-    }.close-icon div:first-child{
-        transform: rotate(45deg);
-    }.close-icon div:not(.close-icon div:first-child){
-        transform: rotate(-45deg);
     }.streaming-device-title{
         margin-bottom: 35px;
     } .hide-stream{
