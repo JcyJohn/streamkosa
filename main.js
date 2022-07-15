@@ -60,3 +60,9 @@ const ToggleStreamingDevices = () =>{
     document.getElementById("overlay").style.display = streamDev.classList.contains("hide-stream") ? "block" : "none";
     streamDev.className = streamDev.classList.contains("hide-stream") ? "streaming-devices" : "streaming-devices hide-stream"
 }
+
+
+const openDropDown = (dropDownItems) => {
+    const list  = document.getElementById(dropDownItems)
+    list.className = list.classList.contains("opened") ? "drop-down-items" : "drop-down-items opened"
+}

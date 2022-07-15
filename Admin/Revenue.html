@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stream Kosa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./../main.css'>
+    <script defer src='./../main.js'></script>
+</head>
+
+<body>
+    <div class="nav-bar" id="navbar">
+        <img id="logo" src="./../Images/logo.svg">
+        <nav class="hidden-nav-Items">
+            <a href="./../Index.html" class="selected">Home</a>
+            <a href="./../explore.html">Explore</a>
+            <a href="./../stream.html">Stream</a>
+            <a href="./Events.html">Admin</a>
+        </nav>
+        <div class="hidden-nav-Items" id="nav-end">
+            <img src="./../Images/Utilities/search.svg">
+            <img src="./../Images/Utilities/cart.svg">
+            <div>
+                <a href="#">Login</a> <span>|</span><a href="#">Sign up</a>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <div id="mobile-nav-bar" class="mobile-menu">
+                <nav class="">
+                    <a href="./../Index.html" class="selected">Home</a>
+                    <a href="./../explore.html">Explore</a>
+                    <a href="./../stream.html">Stream</a>
+                    <a href="./Events.html">Admin</a>
+                    <a href="#">Login</a>
+                    <a href="#">Sign up</a>
+                </nav>
+                <img class="mobile-nav-icon" src="./../Images/Utilities/cart.svg">
+                <img class="mobile-nav-icon mobile-search" src="./../Images/Utilities/search.svg">
+            </div>
+            <div onclick="toggleHam()" class="ham-bugger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Simple Background light effect -->
+    <div class="background-light-con static-light">
+        <div class="background-light" id="left"></div>
+        <div class="background-light" id="middle"></div>
+        <div class="background-light" id="right"></div>
+    </div>
+
+    <div class="Admin-container">
+        <nav class="admin-side-nav">
+            <a  href="./Events.html" class="side-nav-item">Events</a>
+            <a href="./Sales.html"  class="side-nav-item">Sales</a>
+            <a href="./Revenue.html"  class="side-nav-item selected">Revenue</a>
+            <a  href="./Artist.html" class="side-nav-item">Artist</a>
+            <a  href="./Settings.html" class="side-nav-item">Settings</a>
+        </nav>
+        <div class="admin-contents">
+            <div class="dashboard-container">
+                <div class="dashboardbox">
+                    <div class="dashboardTitle">
+                        <div>Available Revenue</div>
+                    </div>
+                    <div class="price">₦295,500.00</div>
+                </div>
+                <div class="dashboardbox ">
+                    <div class="dashboardTitle">
+                        <div>Total Revenue</div>
+                    </div>
+                    <div class="price white-price">₦29,500.00</div>
+                </div>
+                <div class="dashboardbox">
+                    <div class="dashboardTitle">
+                        <div>Withdrawn Revenue</div>
+                    </div>
+                    <div class="price white-price">₦29,500.00</div>
+                </div>
+            </div>
+            <div class="Admin-table">
+                <div class="title-group">
+                    <div>Withdraw / Payout History</div>
+                    <div class="border-less-btn">
+                        Withdraw Revenue
+                    </div>
+                </div>
+              
+                <div class="admin-table-con">
+                    <table>
+                        <tr>
+                            <td>Date</td>
+                            <td>Type</td>
+                            <td>Initiator</td>
+                            <td>Account No.</td>
+                            <td>Bank</td>
+                            <td>Price</td>
+                        </tr>
+                        <tr>
+                            <td> 06-07-22 </td>
+                            <td>Sam Smit</td>
+                            <td>Withdrawal</td>
+                            <td>003****45</td>
+                            <td>GT Bank</td>
+                            <td>₦ 25,700</td>
+                        </tr>
+                        <tr>
+                            <td> 06-07-22 </td>
+                            <td>Sam Smit</td>
+                            <td>Withdrawal</td>
+                            <td>003****45</td>
+                            <td>GT Bank</td>
+                            <td>₦ 25,700</td>
+                        </tr>
+    
+                    </table>
+                </div>
+                <button class="admin-btn">Download Detailed Report</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
