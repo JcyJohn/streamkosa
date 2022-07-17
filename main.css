@@ -1101,7 +1101,7 @@ footer{
     font-size: 13px;
     margin-bottom: 10px;
     color:#ffffff43;
-}.form-inputBox input{
+}.form-inputBox input, .settings-form select{
     width: 100%;
     padding: 12px 15px;
     color:rgba(255, 255, 255, 0.623);
@@ -1330,7 +1330,7 @@ input::-webkit-inner-spin-button,
 }
 
 .single-payment-method img{
-    height: 35px;
+    height: 30px;
 }
 
 .arrow-head{
@@ -1696,6 +1696,83 @@ input::-webkit-inner-spin-button,
 .table-img-header img{
     height: 20px;
     margin-top: 8px;
+}
+
+.settings-form-con{
+    max-width: 400px;
+    padding: 20px;
+    flex-grow: 1;
+    padding-top: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.014);
+}
+.settings-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap:14px;
+}
+.settings-bottom-section{
+    margin-top: 45px;
+    display: flex;
+    gap: 40px;
+    /* /background-color: rebeccapurple; */
+}
+.right-btn{
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 10px;
+}.select-con{
+    position:relative;
+    display: flex;
+    margin-bottom: 0px !important;
+    align-items: center;
+}.select-con .arrow{
+    position: absolute;
+    right: 15px;
+    border-width: 2px;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+    border-color: white;
+
+}.select-con select{
+    appearance: none;
+    font-weight: 400;
+}.admin-table-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}.admin-table-bottom button{
+    align-self: flex-start;
+
+}
+.pagination-container{
+    display: flex;
+    /* background-color: #1c4e7a; */
+    justify-self: flex-end;
+    align-items: center;
+    gap:40px;
+}.pagination-pages{
+    display: flex;
+    align-items: center;
+}.pagination-pages div{
+    height: 32px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}.selected-page{
+    background-color: rgba(255, 255, 255, 0.904);
+    color: black;
+    font-weight: 500;
+}.pagination-btn{
+    cursor: pointer;
+    opacity: .2;
+}.pagination-btn.active{
+    opacity: 1;
 }
 /* End Of Admin */
 
