@@ -1773,6 +1773,24 @@ input::-webkit-inner-spin-button,
     opacity: .2;
 }.pagination-btn.active{
     opacity: 1;
+}.payout-accounts-con{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}.payout-accounts-con img{
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid white;
+    filter:grayscale(100%) brightness(10000%);
+    opacity: .3;
+    transition: .2;
+    cursor: pointer;
+}.payout-accounts-con img.selected{
+    background-color: white;
+    filter: none;
+    opacity: 1;
 }
 /* End Of Admin */
 
